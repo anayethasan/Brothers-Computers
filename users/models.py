@@ -10,6 +10,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     """
     email = models.EmailField(unique=True)
     name = models.CharField(max_length=100)
+    image = models.ImageField(upload_to="users/", blank=True, null=True)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=True)
     date_joined = models.DateTimeField(default=timezone.now)

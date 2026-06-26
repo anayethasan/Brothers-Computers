@@ -1,12 +1,12 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from users.models import User
-
-
+ 
+ 
 @admin.register(User)
 class CustomUserAdmin(UserAdmin):
     model = User
-
+ 
     list_display = (
         "email",
         "name",
@@ -14,25 +14,25 @@ class CustomUserAdmin(UserAdmin):
         "is_staff",
         "date_joined",
     )
-
+ 
     list_filter = (
         "is_staff",
         "is_active",
     )
-
+ 
     search_fields = (
         "email",
         "name",
     )
-
+ 
     ordering = ("email",)
-
+ 
     fieldsets = (
         (None, {
             "fields": ("email", "password")
         }),
         ("Personal Info", {
-            "fields": ("name",)
+            "fields": ("name", "image")
         }),
         ("Permissions", {
             "fields": (
@@ -50,13 +50,14 @@ class CustomUserAdmin(UserAdmin):
             )
         }),
     )
-
+ 
     add_fieldsets = (
         (None, {
             "classes": ("wide",),
             "fields": (
                 "email",
                 "name",
+                "image",
                 "password1",
                 "password2",
                 "is_staff",
@@ -64,9 +65,8 @@ class CustomUserAdmin(UserAdmin):
             ),
         }),
     )
-
+ 
     readonly_fields = (
         "date_joined",
         "last_login",
     )
-
