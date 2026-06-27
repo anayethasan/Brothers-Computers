@@ -1,0 +1,612 @@
+[
+  {
+    "model": "home.homehero",
+    "pk": 1,
+    "fields": {
+      "title": "দক্ষতা অর্জন করুন, স্বপ্ন পূরণ করুন",
+      "subtitle": "পেশাদার প্রশিক্ষকদের সাথে শিখুন",
+      "image": "home/heroes/slide1.jpg",
+      "index": 0
+    }
+  },
+  {
+    "model": "home.homehero",
+    "pk": 2,
+    "fields": {
+      "title": "ক্যারিয়ার গড়ুন আমাদের সাথে",
+      "subtitle": "৫০+ কোর্স, ১০০০+ শিক্ষার্থী",
+      "image": "home/heroes/slide2.jpg",
+      "index": 1
+    }
+  },
+  {
+    "model": "home.homehero",
+    "pk": 3,
+    "fields": {
+      "title": "অনলাইনে শিখুন, যেকোনো সময়",
+      "subtitle": "নিজের গতিতে এগিয়ে যান",
+      "image": "home/heroes/slide3.jpg",
+      "index": 2
+    }
+  },
+  {
+    "model": "home.homevideo",
+    "pk": 1,
+    "fields": {
+      "youtube_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "created_at": "2024-03-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "home.homevideo",
+    "pk": 2,
+    "fields": {
+      "youtube_url": "https://www.youtube.com/watch?v=abc123xyz789",
+      "created_at": "2024-04-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "about.aboutsection",
+    "pk": 1,
+    "fields": {
+      "title": "আমাদের সম্পর্কে",
+      "description": "আমরা একটি পেশাদার শিক্ষা প্রতিষ্ঠান যা ২০১৫ সাল থেকে মানসম্মত কোর্স পরিচালনা করে আসছে। আমাদের লক্ষ্য হলো প্রতিটি শিক্ষার্থীকে দক্ষ ও আত্মনির্ভরশীল করে গড়ে তোলা।",
+      "image": "about/main-banner.jpg",
+      "secondary_image": "about/team-photo.jpg"
+    }
+  },
+  {
+    "model": "about.aboutsection",
+    "pk": 2,
+    "fields": {
+      "title": "আমাদের লক্ষ্য",
+      "description": "প্রতিটি শিক্ষার্থীকে দক্ষ করে গড়ে তোলাই আমাদের প্রধান লক্ষ্য। আমরা বিশ্বাস করি সঠিক গাইডেন্স ও পরিশ্রমে যেকেউ সফল হতে পারে।",
+      "image": "about/mission.jpg",
+      "secondary_image": null
+    }
+  },
+  {
+    "model": "banners.banner",
+    "pk": 1,
+    "fields": {
+      "page_name": "ABOUT",
+      "title": "আমাদের সম্পর্কে জানুন",
+      "image": "banners/about-banner.jpg"
+    }
+  },
+  {
+    "model": "banners.banner",
+    "pk": 2,
+    "fields": {
+      "page_name": "COURSES",
+      "title": "আমাদের সকল কোর্সসমূহ",
+      "image": "banners/courses-banner.jpg"
+    }
+  },
+  {
+    "model": "banners.banner",
+    "pk": 3,
+    "fields": {
+      "page_name": "GALLERY",
+      "title": "আমাদের গ্যালারি",
+      "image": "banners/gallery-banner.jpg"
+    }
+  },
+  {
+    "model": "banners.banner",
+    "pk": 4,
+    "fields": {
+      "page_name": "SHOP",
+      "title": "আমাদের শপ — সেরা পণ্য সেরা দামে",
+      "image": "banners/shop-banner.jpg"
+    }
+  },
+  {
+    "model": "banners.banner",
+    "pk": 5,
+    "fields": {
+      "page_name": "CONTACT",
+      "title": "আমাদের সাথে যোগাযোগ করুন",
+      "image": "banners/contact-banner.jpg"
+    }
+  },
+  {
+    "model": "banners.banner",
+    "pk": 6,
+    "fields": {
+      "page_name": "MENTOR",
+      "title": "আমাদের অভিজ্ঞ মেন্টরগণ",
+      "image": "banners/mentor-banner.jpg"
+    }
+  },
+  {
+    "model": "banners.banner",
+    "pk": 7,
+    "fields": {
+      "page_name": "SUCCESS_STORY",
+      "title": "সফলতার গল্প",
+      "image": "banners/success-banner.jpg"
+    }
+  },
+  {
+    "model": "banners.banner",
+    "pk": 8,
+    "fields": {
+      "page_name": "EVENT",
+      "title": "আমাদের আসন্ন ইভেন্টসমূহ",
+      "image": "banners/event-banner.jpg"
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 1,
+    "fields": {
+      "title": "ওয়েব ডেভেলপমেন্ট বেসিক",
+      "price": "2500.00",
+      "description": "HTML, CSS এবং JavaScript দিয়ে ওয়েব ডেভেলপমেন্টের হাতেখড়ি। এই কোর্সে আপনি শিখবেন কিভাবে প্রফেশনাল ওয়েবসাইট তৈরি করতে হয়।",
+      "duration": "3 months",
+      "image": "courses/web-dev.jpg",
+      "created_at": "2024-01-10T09:00:00Z",
+      "updated_at": "2024-03-05T14:30:00Z"
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 2,
+    "fields": {
+      "title": "পাইথন প্রোগ্রামিং",
+      "price": "3000.00",
+      "description": "পাইথন দিয়ে প্রোগ্রামিং শেখার সম্পূর্ণ গাইড। বেসিক থেকে শুরু করে Django পর্যন্ত সব কিছু কভার করা হবে।",
+      "duration": "4 months",
+      "image": "courses/python.jpg",
+      "created_at": "2024-02-15T10:00:00Z",
+      "updated_at": "2024-04-01T11:00:00Z"
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 3,
+    "fields": {
+      "title": "গ্রাফিক ডিজাইন",
+      "price": "1800.00",
+      "description": "Adobe Photoshop ও Illustrator দিয়ে প্রফেশনাল ডিজাইন শিখুন। লোগো, ব্যানার ও সোশ্যাল মিডিয়া কন্টেন্ট ডিজাইন করুন।",
+      "duration": "2 months",
+      "image": "courses/design.jpg",
+      "created_at": "2024-03-01T08:00:00Z",
+      "updated_at": "2024-03-20T09:00:00Z"
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 4,
+    "fields": {
+      "title": "ডিজিটাল মার্কেটিং",
+      "price": "2000.00",
+      "description": "SEO, Facebook Ads, Google Ads ও Content Marketing শিখুন। আপনার ব্যবসাকে অনলাইনে এগিয়ে নিয়ে যান।",
+      "duration": "2 months",
+      "image": "courses/marketing.jpg",
+      "created_at": "2024-03-15T10:00:00Z",
+      "updated_at": "2024-04-10T10:00:00Z"
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 5,
+    "fields": {
+      "title": "ভিডিও এডিটিং",
+      "price": "2200.00",
+      "description": "Adobe Premiere Pro ও After Effects দিয়ে প্রফেশনাল ভিডিও এডিটিং শিখুন। ইউটিউব ও সোশ্যাল মিডিয়ার জন্য কন্টেন্ট তৈরি করুন।",
+      "duration": "3 months",
+      "image": "courses/video-editing.jpg",
+      "created_at": "2024-04-01T09:00:00Z",
+      "updated_at": "2024-04-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 1,
+    "fields": {
+      "title": "ফ্রি ওয়ার্কশপ: ওয়েব ডিজাইন পরিচিতি",
+      "description": "নতুনদের জন্য বিনামূল্যে ওয়েব ডিজাইন ওয়ার্কশপ। এই ওয়ার্কশপে HTML ও CSS এর মূল বিষয়গুলো হাতে-কলমে শেখানো হবে।",
+      "image": "events/workshop1.jpg",
+      "time": "Friday 3 PM to 6 PM",
+      "location": "ঢাকা, মিরপুর-১০, রুম ২০৫",
+      "created_at": "2024-05-01T10:00:00Z",
+      "updated_at": "2024-05-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 2,
+    "fields": {
+      "title": "সেমিনার: ফ্রিল্যান্সিং ক্যারিয়ার গড়ার কৌশল",
+      "description": "ফ্রিল্যান্সিংয়ে সফল হওয়ার কৌশল নিয়ে বিশেষজ্ঞদের আলোচনা। Upwork, Fiverr ও Freelancer.com-এ সফল হওয়ার টিপস শেয়ার করা হবে।",
+      "image": "events/seminar1.jpg",
+      "time": "Sunday 2 PM to 5 PM",
+      "location": "চট্টগ্রাম, নাসিরাবাদ কমিউনিটি হল",
+      "created_at": "2024-05-10T09:00:00Z",
+      "updated_at": "2024-05-10T09:00:00Z"
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 3,
+    "fields": {
+      "title": "হ্যাকাথন: বেস্ট ওয়েব অ্যাপ চ্যালেঞ্জ",
+      "description": "৪৮ ঘণ্টার হ্যাকাথনে অংশ নিন এবং সেরা ওয়েব অ্যাপ তৈরি করুন। বিজয়ীদের জন্য বিশেষ পুরস্কার ও ইন্টার্নশিপের সুযোগ।",
+      "image": "events/hackathon.jpg",
+      "time": "Saturday 9 AM to Sunday 9 AM",
+      "location": "ঢাকা, গুলশান-২, ইনোভেশন হাব",
+      "created_at": "2024-06-01T08:00:00Z",
+      "updated_at": "2024-06-01T08:00:00Z"
+    }
+  },
+  {
+    "model": "gallery.gallerycategory",
+    "pk": 1,
+    "fields": {
+      "name": "ক্লাসরুম"
+    }
+  },
+  {
+    "model": "gallery.gallerycategory",
+    "pk": 2,
+    "fields": {
+      "name": "ইভেন্ট"
+    }
+  },
+  {
+    "model": "gallery.gallerycategory",
+    "pk": 3,
+    "fields": {
+      "name": "সার্টিফিকেশন"
+    }
+  },
+  {
+    "model": "gallery.gallerycategory",
+    "pk": 4,
+    "fields": {
+      "name": "টিম"
+    }
+  },
+  {
+    "model": "gallery.galleryimage",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "title": "পাইথন ক্লাস চলাকালীন",
+      "image": "gallery/class-python.jpg",
+      "created_at": "2024-04-10T12:00:00Z"
+    }
+  },
+  {
+    "model": "gallery.galleryimage",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "title": "ওয়েব ডেভেলপমেন্ট হাতে-কলমে অনুশীলন",
+      "image": "gallery/class-webdev.jpg",
+      "created_at": "2024-04-12T10:00:00Z"
+    }
+  },
+  {
+    "model": "gallery.galleryimage",
+    "pk": 3,
+    "fields": {
+      "category": 2,
+      "title": "বার্ষিক ওয়ার্কশপ ২০২৪",
+      "image": "gallery/workshop-2024.jpg",
+      "created_at": "2024-04-15T14:00:00Z"
+    }
+  },
+  {
+    "model": "gallery.galleryimage",
+    "pk": 4,
+    "fields": {
+      "category": 2,
+      "title": "ফ্রিল্যান্সিং সেমিনার",
+      "image": "gallery/freelancing-seminar.jpg",
+      "created_at": "2024-04-18T11:00:00Z"
+    }
+  },
+  {
+    "model": "gallery.galleryimage",
+    "pk": 5,
+    "fields": {
+      "category": 3,
+      "title": "সার্টিফিকেট বিতরণ অনুষ্ঠান — ব্যাচ ১২",
+      "image": "gallery/cert-batch12.jpg",
+      "created_at": "2024-04-20T16:00:00Z"
+    }
+  },
+  {
+    "model": "gallery.galleryimage",
+    "pk": 6,
+    "fields": {
+      "category": 4,
+      "title": "আমাদের মেন্টর টিম",
+      "image": "gallery/team-mentors.jpg",
+      "created_at": "2024-04-22T09:00:00Z"
+    }
+  },
+  {
+    "model": "mentors.mentor",
+    "pk": 1,
+    "fields": {
+      "name": "রাফি আহমেদ",
+      "designation": "সিনিয়র ওয়েব ডেভেলপার, গুগল বাংলাদেশ",
+      "image": "mentors/rafi.jpg",
+      "bio": "১০ বছরের অভিজ্ঞতাসম্পন্ন ফুলস্ট্যাক ডেভেলপার। React, Django এবং AWS-এ বিশেষজ্ঞ। ইতিমধ্যে ৫০০+ শিক্ষার্থীকে প্রশিক্ষণ দিয়েছেন।",
+      "is_top": true,
+      "created_at": "2023-06-01T08:00:00Z"
+    }
+  },
+  {
+    "model": "mentors.mentor",
+    "pk": 2,
+    "fields": {
+      "name": "তানিয়া সুলতানা",
+      "designation": "UI/UX ডিজাইনার, Brain Station 23",
+      "image": "mentors/tania.jpg",
+      "bio": "৭ বছর ধরে ডিজিটাল প্রোডাক্ট ডিজাইন করছেন। Figma ও Adobe XD-এ বিশেষজ্ঞ। আন্তর্জাতিক ক্লায়েন্টের সাথে কাজ করার অভিজ্ঞতা রয়েছে।",
+      "is_top": true,
+      "created_at": "2023-07-15T09:00:00Z"
+    }
+  },
+  {
+    "model": "mentors.mentor",
+    "pk": 3,
+    "fields": {
+      "name": "ইমরান হোসেন",
+      "designation": "ফ্রিল্যান্স পাইথন ডেভেলপার",
+      "image": "mentors/imran.jpg",
+      "bio": "Upwork-এ Top Rated Plus ফ্রিল্যান্সার। Django, FastAPI এবং Machine Learning-এ অভিজ্ঞ। মাসে গড়ে $৫০০০+ আয় করেন।",
+      "is_top": false,
+      "created_at": "2023-09-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "mentors.mentor",
+    "pk": 4,
+    "fields": {
+      "name": "সাবরিনা খান",
+      "designation": "ডিজিটাল মার্কেটিং ম্যানেজার, Pathao",
+      "image": "mentors/sabrina.jpg",
+      "bio": "৬ বছরের ডিজিটাল মার্কেটিং অভিজ্ঞতা। SEO, Google Ads ও Facebook Ads-এ দক্ষ। একাধিক স্টার্টআপের মার্কেটিং স্ট্র্যাটেজি তৈরি করেছেন।",
+      "is_top": true,
+      "created_at": "2023-10-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "notices.notice",
+    "pk": 1,
+    "fields": {
+      "title": "ঈদ উপলক্ষে বিশেষ ছাড়",
+      "description": "ঈদুল আযহা উপলক্ষে সকল কোর্সে ৩০% ছাড়। এই সুযোগ সীমিত সময়ের জন্য। আজই এনরোল করুন এবং আপনার স্বপ্নের ক্যারিয়ার শুরু করুন।",
+      "is_active": true,
+      "start_time": "2024-06-10T00:00:00Z",
+      "end_time": "2024-06-20T23:59:00Z",
+      "created_at": "2024-06-09T10:00:00Z"
+    }
+  },
+  {
+    "model": "notices.notice",
+    "pk": 2,
+    "fields": {
+      "title": "নতুন ব্যাচ শুরু হচ্ছে — জুলাই ২০২৪",
+      "description": "জুলাই মাস থেকে পাইথন ও ওয়েব ডেভেলপমেন্ট কোর্সের নতুন ব্যাচ শুরু হবে। আসন সংখ্যা সীমিত, তাই দ্রুত রেজিস্ট্রেশন করুন।",
+      "is_active": true,
+      "start_time": "2024-06-15T00:00:00Z",
+      "end_time": "2024-07-05T23:59:00Z",
+      "created_at": "2024-06-14T09:00:00Z"
+    }
+  },
+  {
+    "model": "notices.notice",
+    "pk": 3,
+    "fields": {
+      "title": "বার্ষিক পুরস্কার বিতরণ অনুষ্ঠান",
+      "description": "এ বছরের সেরা শিক্ষার্থীদের পুরস্কার বিতরণ অনুষ্ঠান আগামী ২৫ জুন অনুষ্ঠিত হবে। সকল শিক্ষার্থী ও অভিভাবকদের আমন্ত্রণ জানানো হচ্ছে।",
+      "is_active": false,
+      "start_time": "2024-05-01T00:00:00Z",
+      "end_time": "2024-05-31T23:59:00Z",
+      "created_at": "2024-04-28T10:00:00Z"
+    }
+  },
+  {
+    "model": "shop.productcategory",
+    "pk": 1,
+    "fields": {
+      "name": "বই"
+    }
+  },
+  {
+    "model": "shop.productcategory",
+    "pk": 2,
+    "fields": {
+      "name": "স্টেশনারি"
+    }
+  },
+  {
+    "model": "shop.productcategory",
+    "pk": 3,
+    "fields": {
+      "name": "কোর্স মেটেরিয়াল"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "name": "পাইথন প্রোগ্রামিং গাইড (বাংলা)",
+      "price": "350.00",
+      "description": "সম্পূর্ণ বাংলায় পাইথন শেখার জন্য বিস্তারিত গাইডবুক। বেসিক সিনট্যাক্স থেকে শুরু করে Django পর্যন্ত সব কিছু কভার করা হয়েছে।",
+      "image": "products/python-book.jpg",
+      "stock_status": "available",
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-04-10T11:00:00Z"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "name": "ওয়েব ডেভেলপমেন্ট মাস্টারক্লাস বই",
+      "price": "420.00",
+      "description": "HTML, CSS, JavaScript এবং React একসাথে শেখার জন্য সম্পূর্ণ গাইড। ১০০+ প্র্যাকটিক্যাল প্রজেক্ট সহ।",
+      "image": "products/webdev-book.jpg",
+      "stock_status": "available",
+      "created_at": "2024-02-01T09:00:00Z",
+      "updated_at": "2024-03-10T10:00:00Z"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 3,
+    "fields": {
+      "category": 3,
+      "name": "ওয়েব ডেভেলপমেন্ট নোটস প্যাক",
+      "price": "200.00",
+      "description": "HTML, CSS, JS এর কম্প্লিট হ্যান্ডনোটস। ক্লাসে নেওয়া নোটের হুবহু প্রিন্টেড সংস্করণ।",
+      "image": "products/notes-pack.jpg",
+      "stock_status": "available",
+      "created_at": "2024-02-05T09:00:00Z",
+      "updated_at": "2024-03-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 4,
+    "fields": {
+      "category": 2,
+      "name": "কোডিং প্র্যাকটিস নোটবুক",
+      "price": "120.00",
+      "description": "বিশেষভাবে ডিজাইন করা কোডিং প্র্যাকটিস নোটবুক। গ্রিড পেপার ও কোড ব্লক সহ ১৫০ পেজ।",
+      "image": "products/notebook.jpg",
+      "stock_status": "out_of_stock",
+      "created_at": "2024-03-10T08:00:00Z",
+      "updated_at": "2024-05-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 5,
+    "fields": {
+      "category": 3,
+      "name": "পাইথন প্রজেক্ট সোর্স কোড প্যাক (USB)",
+      "price": "500.00",
+      "description": "১৫টি রিয়েল-ওয়ার্ল্ড পাইথন প্রজেক্টের সম্পূর্ণ সোর্স কোড সহ USB। কোর্স শিক্ষার্থীদের জন্য বিশেষভাবে তৈরি।",
+      "image": "products/usb-pack.jpg",
+      "stock_status": "available",
+      "created_at": "2024-04-01T10:00:00Z",
+      "updated_at": "2024-04-20T11:00:00Z"
+    }
+  },
+  {
+    "model": "success_stories.SuccessStory",
+    "pk": 1,
+    "fields": {
+      "image": "success_stories/sakib.jpg",
+      "name": "সাকিব আল হাসান",
+      "title": "ওয়েব ডেভেলপার, BJIT Ltd",
+      "description": "এই কোর্সের মাধ্যমে আমি মাত্র ৬ মাসে চাকরি পেয়েছি। মেন্টরদের গাইডেন্স অসাধারণ ছিল। কোর্স শেষে পোর্টফোলিও তৈরি করে ইন্টারভিউতে সফল হয়েছি।",
+      "created_at": "2024-04-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "success_stories.SuccessStory",
+    "pk": 2,
+    "fields": {
+      "image": "success_stories/priya.jpg",
+      "name": "প্রিয়া দাস",
+      "title": "ফ্রিল্যান্স গ্রাফিক ডিজাইনার",
+      "description": "গ্রাফিক ডিজাইন কোর্স করার পর Fiverr-এ Level 2 Seller হয়েছি। এখন মাসে ৫০-৬০ হাজার টাকা আয় করছি। এই একাডেমি আমার জীবন বদলে দিয়েছে।",
+      "created_at": "2024-04-15T09:00:00Z"
+    }
+  },
+  {
+    "model": "success_stories.SuccessStory",
+    "pk": 3,
+    "fields": {
+      "image": "success_stories/rafiqul.jpg",
+      "name": "রফিকুল ইসলাম",
+      "title": "Junior Python Developer, Kaz Software",
+      "description": "পাইথন কোর্স করার আগে আমি কোনো প্রোগ্রামিং জানতাম না। মাত্র ৪ মাসে Django শিখে চাকরি পেয়েছি। ইন্সট্রাক্টরদের সাপোর্ট সত্যিই অতুলনীয়।",
+      "created_at": "2024-05-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "testimonials.testimonial",
+    "pk": 1,
+    "fields": {
+      "image": "testimonials/user1.jpg",
+      "title": "সেরা কোর্স যা আমি পেয়েছি",
+      "rating": 5,
+      "description": "পাইথন কোর্সটি সত্যিই অসাধারণ। কঠিন বিষয়গুলো খুব সহজে বোঝানো হয়েছে। প্রতিটি ক্লাসের পর অ্যাসাইনমেন্ট থাকায় প্র্যাকটিস ভালো হয়েছে।",
+      "name": "মাহমুদুল হাসান",
+      "created_at": "2024-05-01T10:00:00Z"
+    }
+  },
+  {
+    "model": "testimonials.testimonial",
+    "pk": 2,
+    "fields": {
+      "image": "testimonials/user2.jpg",
+      "title": "প্রফেশনাল ও মানসম্মত ট্রেনিং",
+      "rating": 4,
+      "description": "ক্লাসরুমের পরিবেশ ও প্রশিক্ষকদের মান খুবই ভালো। সময়মতো ক্লাস হয় এবং যেকোনো সমস্যায় মেন্টররা সাহায্য করেন।",
+      "name": "ফারহানা আক্তার",
+      "created_at": "2024-05-10T11:00:00Z"
+    }
+  },
+  {
+    "model": "testimonials.testimonial",
+    "pk": 3,
+    "fields": {
+      "image": "testimonials/user3.jpg",
+      "title": "ফ্রিল্যান্সিংয়ের পথ খুলে দিয়েছে",
+      "rating": 5,
+      "description": "ডিজিটাল মার্কেটিং কোর্সের পর আমি নিজেই ছোট ব্যবসা প্রতিষ্ঠানগুলোকে সার্ভিস দিতে পারছি। কোর্সের কন্টেন্ট একদম আপডেট এবং প্র্যাকটিক্যাল।",
+      "name": "নাজমুল করিম",
+      "created_at": "2024-05-20T09:00:00Z"
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "email": "admin@academy.com",
+      "name": "Super Admin",
+      "image": "users/admin.jpg",
+      "is_active": true,
+      "is_staff": true,
+      "date_joined": "2023-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "email": "rafi@academy.com",
+      "name": "রাফি আহমেদ",
+      "image": "users/rafi.jpg",
+      "is_active": true,
+      "is_staff": true,
+      "date_joined": "2023-06-01T08:00:00Z"
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "email": "tania@academy.com",
+      "name": "তানিয়া সুলতানা",
+      "image": "users/tania.jpg",
+      "is_active": true,
+      "is_staff": true,
+      "date_joined": "2023-07-15T09:00:00Z"
+    }
+  }
+]
