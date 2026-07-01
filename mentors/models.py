@@ -3,7 +3,7 @@ from django.db import models
 class Mentor(models.Model):
     name = models.CharField(max_length=150)
     designation = models.CharField(max_length=200)
-    image = models.ImageField(upload_to="mentors/")
+    image = models.ImageField(upload_to="mentors/", null=True)
     bio = models.TextField()
     is_top = models.BooleanField(
         default=False,
