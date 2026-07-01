@@ -10,6 +10,7 @@ class AdminLoginView(TokenObtainPairView):
 
 class AdminLogoutView(generics.GenericAPIView):
     
+    serializer_class = sz.EmptySerializer
     permission_classes = [permissions.IsAuthenticated]
     
     def post(self, request):

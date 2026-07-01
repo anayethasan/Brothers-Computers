@@ -9,6 +9,7 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = ["id", "email", "name", "image", "initial", "is_active", "is_staff", "date_joined"]
         read_only_fields = ["id", "date_joined"]
+        ref_name = "CustomUser"
  
     def get_initial(self, obj):
         """
@@ -40,3 +41,6 @@ class ChangePasswordSerializer(serializers.Serializer):
         if not user.check_password(value):
             raise serializers.ValidationError("Old password is incorrect.")
         return value
+    
+class EmptySerializer(serializers.Serializer):
+    pass
