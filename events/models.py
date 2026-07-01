@@ -3,7 +3,7 @@ from django.db import models
 class Event(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
-    image = models.ImageField(upload_to="events/")
+    image = models.ImageField(upload_to="events/", null=True)
     time = models.CharField(
         max_length=100,
         help_text='Free-text time "Sunday 2 PM to 4 PM"'

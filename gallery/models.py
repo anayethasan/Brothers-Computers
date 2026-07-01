@@ -17,7 +17,7 @@ class GalleryImage(models.Model):
         related_name="images"
     )
     title = models.CharField(max_length=250)
-    image = models.ImageField(upload_to="gallery/")
+    image = models.ImageField(upload_to="gallery/", null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     
     class Meta:

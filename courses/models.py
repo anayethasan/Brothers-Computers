@@ -7,7 +7,7 @@ class Course(models.Model):
     
     duration = models.CharField(max_length=100, help_text=" text will this way '3 months'")
     
-    image = models.ImageField(upload_to="courses/")
+    image = models.ImageField(upload_to="courses/", null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     

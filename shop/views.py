@@ -16,7 +16,7 @@ class ProductCategoryViewSet(viewsets.ModelViewSet):
     serializer_class = ProductCategorySerializer
     permission_classes = [IsAdminOrReadOnly]
     pagination_class = None
-    filter_backends  = [filters.SearchFilter, filters.OrderingFilter]
+    filter_backends  = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     search_fields = ["name"]
     ordering_fields = ["name"]
     
